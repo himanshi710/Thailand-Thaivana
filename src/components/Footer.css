@@ -1,0 +1,873 @@
+
+
+.footer {
+  position: relative;
+  overflow: hidden;
+  color: var(--ivory);
+
+  background:
+    radial-gradient(
+      circle at 10% 10%,
+      rgba(112, 71, 163, 0.35),
+      transparent 30%
+    ),
+    radial-gradient(
+      circle at 90% 80%,
+      rgba(24, 166, 166, 0.18),
+      transparent 30%
+    ),
+    linear-gradient(
+      135deg,
+      #0b0912 0%,
+      #171329 38%,
+      #26183e 68%,
+      #102c31 100%
+    );
+}
+
+
+/* =========================================================
+   DECORATIVE GLOW
+   ========================================================= */
+
+.footer::before {
+  content: "";
+  position: absolute;
+
+  width: 520px;
+  height: 520px;
+
+  top: -300px;
+  right: -180px;
+
+  border-radius: 50%;
+
+  background:
+    radial-gradient(
+      circle,
+      rgba(245, 155, 131, 0.18),
+      rgba(112, 71, 163, 0.06) 45%,
+      transparent 70%
+    );
+
+  pointer-events: none;
+}
+
+
+.footer::after {
+  content: "";
+
+  position: absolute;
+
+  width: 450px;
+  height: 450px;
+
+  left: -250px;
+  bottom: -280px;
+
+  border-radius: 50%;
+
+  background:
+    radial-gradient(
+      circle,
+      rgba(24, 166, 166, 0.18),
+      transparent 70%
+    );
+
+  pointer-events: none;
+}
+
+
+/* =========================================================
+   CTA
+   ========================================================= */
+
+.footer-cta {
+  position: relative;
+  z-index: 2;
+
+  padding: clamp(65px, 8vw, 100px) 0;
+
+  border-bottom:
+    1px solid rgba(255, 255, 255, 0.10);
+}
+
+
+.footer-cta-inner {
+  display: flex;
+
+  align-items: flex-end;
+  justify-content: space-between;
+
+  gap: 45px;
+}
+
+
+.footer-cta-content {
+  min-width: 0;
+}
+
+
+.footer-eyebrow {
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  margin-bottom: 22px;
+
+  color: var(--champagne-light);
+
+  font-size: 11px;
+
+  font-weight: 700;
+
+  letter-spacing: 3px;
+
+  line-height: 1.4;
+}
+
+
+.footer-eyebrow::before {
+  content: "";
+
+  width: 35px;
+  height: 1px;
+
+  flex-shrink: 0;
+
+  background:
+    linear-gradient(
+      90deg,
+      var(--champagne),
+      var(--peach)
+    );
+}
+
+
+.footer-cta h2 {
+  max-width: 760px;
+
+  margin: 0;
+
+  font-family: "Playfair Display", serif;
+
+  font-size: clamp(48px, 6.2vw, 88px);
+
+  font-weight: 400;
+
+  line-height: 0.98;
+
+  letter-spacing: -3px;
+}
+
+
+.footer-cta h2 em {
+  font-style: italic;
+
+  background:
+    linear-gradient(
+      90deg,
+      var(--champagne-light),
+      var(--peach)
+    );
+
+  -webkit-background-clip: text;
+  background-clip: text;
+
+  -webkit-text-fill-color: transparent;
+}
+
+
+/* =========================================================
+   CTA BUTTON
+   ========================================================= */
+
+.footer-cta-button {
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 13px;
+
+  flex-shrink: 0;
+
+  min-width: 185px;
+  min-height: 58px;
+
+  padding: 0 25px;
+
+  border-radius: 100px;
+
+  color: var(--midnight);
+
+  background:
+    linear-gradient(
+      135deg,
+      var(--champagne-light),
+      var(--peach)
+    );
+
+  font-size: 12px;
+
+  font-weight: 800;
+
+  letter-spacing: 0.8px;
+
+  text-transform: uppercase;
+
+  box-shadow:
+    0 15px 40px rgba(245, 155, 131, 0.20);
+
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease;
+}
+
+
+.footer-cta-button svg {
+  transition: transform 0.35s ease;
+}
+
+
+.footer-cta-button:hover {
+  transform: translateY(-5px);
+
+  box-shadow:
+    0 20px 50px rgba(245, 155, 131, 0.30);
+}
+
+
+.footer-cta-button:hover svg {
+  transform: translate(4px, -4px);
+}
+
+
+/* =========================================================
+   MAIN
+   ========================================================= */
+
+.footer-main {
+  position: relative;
+  z-index: 2;
+
+  padding: 75px 0;
+}
+
+
+.footer-main::before {
+  content: "";
+
+  position: absolute;
+
+  top: 0;
+  left: 50%;
+
+  width: 55%;
+  height: 1px;
+
+  transform: translateX(-50%);
+
+  background:
+    linear-gradient(
+      90deg,
+      transparent,
+      rgba(216, 179, 106, 0.45),
+      rgba(24, 166, 166, 0.35),
+      transparent
+    );
+}
+
+
+.footer-grid {
+  display: grid;
+
+  grid-template-columns:
+    minmax(230px, 2fr)
+    minmax(130px, 1fr)
+    minmax(130px, 1fr)
+    minmax(220px, 1.25fr);
+
+  gap: clamp(30px, 5vw, 70px);
+}
+
+
+/* =========================================================
+   BRAND
+   ========================================================= */
+
+.footer-brand {
+  max-width: 360px;
+}
+
+
+.footer-logo {
+  display: inline-block;
+
+  margin-bottom: 20px;
+
+  font-family: "Playfair Display", serif;
+
+  font-size: 32px;
+
+  font-weight: 600;
+
+  letter-spacing: -1px;
+
+  color: var(--white);
+
+  transition: transform 0.3s ease;
+}
+
+
+.footer-logo span {
+  color: var(--champagne-light);
+}
+
+
+.footer-logo:hover {
+  transform: translateX(4px);
+}
+
+
+.footer-brand p {
+  max-width: 330px;
+
+  color:
+    rgba(255, 250, 242, 0.60);
+
+  font-size: 14px;
+
+  line-height: 1.8;
+}
+
+
+/* =========================================================
+   SOCIALS
+   ========================================================= */
+
+.footer-socials {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 10px;
+
+  margin-top: 27px;
+}
+
+
+.footer-socials a {
+  width: 40px;
+  height: 40px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  color:
+    rgba(255, 255, 255, 0.70);
+
+  background:
+    rgba(255, 255, 255, 0.055);
+
+  border:
+    1px solid rgba(255, 255, 255, 0.12);
+
+  font-size: 10px;
+
+  font-weight: 800;
+
+  letter-spacing: 1px;
+
+  transition:
+    transform 0.3s ease,
+    background 0.3s ease,
+    color 0.3s ease;
+}
+
+
+.footer-socials a:hover {
+  color: var(--midnight);
+
+  background:
+    linear-gradient(
+      135deg,
+      var(--champagne-light),
+      var(--peach)
+    );
+
+  transform:
+    translateY(-5px)
+    rotate(-5deg);
+}
+
+
+/* =========================================================
+   COLUMNS
+   ========================================================= */
+
+.footer-column,
+.footer-contact {
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: flex-start;
+}
+
+
+.footer-column h4,
+.footer-contact h4 {
+  margin-bottom: 23px;
+
+  color: var(--white);
+
+  font-size: 11px;
+
+  font-weight: 800;
+
+  letter-spacing: 2.2px;
+}
+
+
+.footer-column h4::after,
+.footer-contact h4::after {
+  content: "";
+
+  display: block;
+
+  width: 25px;
+  height: 1px;
+
+  margin-top: 9px;
+
+  background:
+    linear-gradient(
+      90deg,
+      var(--champagne),
+      var(--lagoon)
+    );
+}
+
+
+.footer-column a {
+  position: relative;
+
+  margin-bottom: 14px;
+
+  color:
+    rgba(255, 250, 242, 0.57);
+
+  font-size: 13px;
+
+  transition:
+    color 0.3s ease,
+    transform 0.3s ease;
+}
+
+
+.footer-column a:hover {
+  color: var(--white);
+
+  transform: translateX(5px);
+}
+
+
+.footer-column a::before {
+  content: "→";
+
+  position: absolute;
+
+  left: -18px;
+
+  color: var(--champagne-light);
+
+  opacity: 0;
+
+  transition: 0.3s ease;
+}
+
+
+.footer-column a:hover::before {
+  left: -15px;
+
+  opacity: 1;
+}
+
+
+/* =========================================================
+   CONTACT CARD
+   ========================================================= */
+
+.footer-contact {
+  padding: 25px;
+
+  border:
+    1px solid rgba(255, 255, 255, 0.10);
+
+  border-radius: 20px;
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(255, 255, 255, 0.075),
+      rgba(255, 255, 255, 0.025)
+    );
+
+  box-shadow:
+    inset 0 1px 0
+    rgba(255, 255, 255, 0.05);
+}
+
+
+.footer-contact a,
+.footer-address {
+  display: flex;
+
+  align-items: flex-start;
+
+  gap: 12px;
+
+  margin-bottom: 16px;
+
+  color:
+    rgba(255, 250, 242, 0.60);
+
+  font-size: 13px;
+
+  line-height: 1.5;
+
+  word-break: break-word;
+
+  transition:
+    color 0.3s ease,
+    transform 0.3s ease;
+}
+
+
+.footer-contact svg,
+.footer-address svg {
+  flex-shrink: 0;
+
+  margin-top: 2px;
+
+  color: var(--lagoon-light);
+}
+
+
+.footer-contact a:hover {
+  color: var(--white);
+
+  transform: translateX(4px);
+}
+
+
+/* =========================================================
+   BOTTOM
+   ========================================================= */
+
+.footer-bottom {
+  position: relative;
+  z-index: 2;
+
+  background:
+    rgba(0, 0, 0, 0.16);
+
+  border-top:
+    1px solid rgba(255, 255, 255, 0.08);
+}
+
+
+.footer-bottom-inner {
+  min-height: 75px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 25px;
+}
+
+
+.footer-bottom p {
+  color:
+    rgba(255, 255, 255, 0.40);
+
+  font-size: 11px;
+
+  line-height: 1.5;
+}
+
+
+.footer-bottom-links {
+  display: flex;
+
+  align-items: center;
+
+  flex-wrap: wrap;
+
+  gap: 24px;
+}
+
+
+.footer-bottom-links a {
+  color:
+    rgba(255, 255, 255, 0.43);
+
+  font-size: 11px;
+
+  transition: color 0.3s ease;
+}
+
+
+.footer-bottom-links a:hover {
+  color: var(--champagne-light);
+}
+
+
+/* =========================================================
+   TABLET — 1024px
+   ========================================================= */
+
+@media (max-width: 1100px) {
+
+  .footer-grid {
+    grid-template-columns:
+      1.5fr
+      1fr
+      1fr;
+  }
+
+
+  .footer-contact {
+    grid-column: 1 / -1;
+
+    width: 100%;
+  }
+
+}
+
+
+/* =========================================================
+   TABLET — 768px
+   ========================================================= */
+
+@media (max-width: 800px) {
+
+  .footer-cta-inner {
+    align-items: flex-start;
+
+    flex-direction: column;
+  }
+
+
+  .footer-cta-button {
+    width: auto;
+  }
+
+
+  .footer-grid {
+    grid-template-columns:
+      1fr 1fr;
+
+    gap: 45px 35px;
+  }
+
+
+  .footer-brand {
+    grid-column: 1 / -1;
+
+    max-width: 550px;
+  }
+
+
+  .footer-contact {
+    grid-column: 1 / -1;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE — 600px
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+  .footer-cta {
+    padding: 60px 0 55px;
+  }
+
+
+  .footer-cta-inner {
+    gap: 32px;
+  }
+
+
+  .footer-eyebrow {
+    font-size: 10px;
+
+    letter-spacing: 2.3px;
+  }
+
+
+  .footer-cta h2 {
+    font-size: clamp(42px, 13vw, 62px);
+
+    line-height: 1;
+
+    letter-spacing: -2px;
+  }
+
+
+  .footer-cta-button {
+    width: 100%;
+
+    min-height: 56px;
+  }
+
+
+  .footer-main {
+    padding: 55px 0;
+  }
+
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+
+    gap: 38px;
+  }
+
+
+  .footer-brand,
+  .footer-contact {
+    grid-column: auto;
+  }
+
+
+  .footer-column {
+    width: 100%;
+  }
+
+
+  .footer-contact {
+    width: 100%;
+
+    padding: 23px;
+  }
+
+
+  .footer-logo {
+    font-size: 29px;
+  }
+
+
+  .footer-brand p {
+    font-size: 13px;
+  }
+
+
+  .footer-bottom-inner {
+    min-height: auto;
+
+    padding: 22px 0;
+
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 15px;
+  }
+
+
+  .footer-bottom-links {
+    gap: 15px 22px;
+  }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE — 400px
+   ========================================================= */
+
+@media (max-width: 400px) {
+
+  .footer-cta {
+    padding: 52px 0;
+  }
+
+
+  .footer-cta h2 {
+    font-size: 42px;
+
+    letter-spacing: -1.8px;
+  }
+
+
+  .footer-eyebrow {
+    font-size: 9px;
+
+    letter-spacing: 1.8px;
+  }
+
+
+  .footer-eyebrow::before {
+    width: 25px;
+  }
+
+
+  .footer-main {
+    padding: 48px 0;
+  }
+
+
+  .footer-contact {
+    padding: 20px;
+
+    border-radius: 17px;
+  }
+
+
+  .footer-contact a,
+  .footer-address {
+    font-size: 12px;
+  }
+
+
+  .footer-bottom-links {
+    gap: 12px 18px;
+  }
+
+}
+
+
+/* =========================================================
+   VERY SMALL DEVICES — 340px
+   ========================================================= */
+
+@media (max-width: 340px) {
+
+  .footer-cta h2 {
+    font-size: 37px;
+  }
+
+
+  .footer-logo {
+    font-size: 26px;
+  }
+
+
+  .footer-cta-button {
+    font-size: 10px;
+  }
+
+}
+

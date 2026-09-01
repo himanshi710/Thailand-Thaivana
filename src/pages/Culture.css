@@ -1,0 +1,2741 @@
+
+/* =========================================================
+   CULTURE PAGE
+   THAIVANA — MIDNIGHT ORCHID
+   ========================================================= */
+
+.culture-page {
+  overflow: hidden;
+  background: var(--ivory);
+}
+
+
+/* =========================================================
+   HERO
+   ========================================================= */
+
+.culture-hero {
+  position: relative;
+
+  min-height: 720px;
+
+  display: flex;
+  align-items: center;
+
+  overflow: hidden;
+
+  color: var(--white);
+
+  background: var(--midnight);
+}
+
+
+.culture-hero-bg {
+  position: absolute;
+
+  inset: 0;
+
+  background-image:
+    url("https://images.unsplash.com/photo-1563492065599-3520f775eeed?auto=format&fit=crop&w=2200&q=90");
+
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+
+  transform: scale(1.03);
+}
+
+
+.culture-hero-overlay {
+  position: absolute;
+
+  inset: 0;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(13, 11, 20, .94) 0%,
+      rgba(23, 19, 41, .78) 42%,
+      rgba(23, 19, 41, .30) 75%,
+      rgba(23, 19, 41, .45) 100%
+    );
+}
+
+
+.culture-hero-glow {
+  position: absolute;
+
+  width: 500px;
+  height: 500px;
+
+  right: -150px;
+  bottom: -230px;
+
+  border-radius: 50%;
+
+  background:
+    radial-gradient(
+      circle,
+      rgba(24,166,166,.34),
+      transparent 68%
+    );
+
+  filter: blur(15px);
+}
+
+
+.culture-hero-inner {
+  position: relative;
+  z-index: 3;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 60px;
+
+  padding-top: 80px;
+}
+
+
+.culture-hero-copy {
+  max-width: 760px;
+}
+
+
+.culture-hero-label {
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  margin-bottom: 25px;
+
+  color: var(--champagne-light);
+
+  font-size: 10px;
+
+  font-weight: 800;
+
+  letter-spacing: 3px;
+}
+
+
+.culture-hero-label span {
+  width: 34px;
+  height: 1px;
+
+  background: var(--champagne);
+}
+
+
+.culture-hero-copy h1 {
+  margin: 0;
+
+  font-family:
+    "Playfair Display",
+    serif;
+
+  font-size: clamp(65px, 8vw, 112px);
+
+  font-weight: 400;
+
+  line-height: .91;
+
+  letter-spacing: -4px;
+}
+
+
+.culture-hero-copy h1 em {
+  color: var(--champagne-light);
+
+  font-weight: 400;
+}
+
+
+.culture-hero-copy > p {
+  max-width: 520px;
+
+  margin-top: 32px;
+
+  color: rgba(255,255,255,.72);
+
+  font-size: 14px;
+
+  line-height: 1.9;
+}
+
+
+/* BADGE */
+
+.culture-hero-badge {
+  flex-shrink: 0;
+
+  width: 150px;
+  height: 150px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  flex-direction: column;
+
+  border-radius: 50%;
+
+  color: var(--white);
+
+  border: 1px solid rgba(255,255,255,.3);
+
+  background:
+    rgba(23,19,41,.30);
+
+  backdrop-filter: blur(15px);
+
+  transform: rotate(8deg);
+}
+
+
+.culture-hero-badge span {
+  font-size: 8px;
+
+  letter-spacing: 3px;
+
+  color: var(--lagoon-light);
+}
+
+
+.culture-hero-badge strong {
+  margin-top: 4px;
+
+  font-family:
+    "Playfair Display",
+    serif;
+
+  font-size: 19px;
+
+  font-weight: 500;
+}
+
+
+.culture-hero-badge small {
+  margin-top: 7px;
+
+  color: rgba(255,255,255,.55);
+
+  font-size: 6px;
+
+  line-height: 1.7;
+
+  text-align: center;
+
+  letter-spacing: 2px;
+}
+
+
+.culture-hero-bottom {
+  position: absolute;
+
+  z-index: 5;
+
+  left: 0;
+  right: 0;
+  bottom: 30px;
+
+  width: min(100% - 40px, var(--container));
+
+  margin: auto;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+
+  color: rgba(255,255,255,.55);
+
+  font-size: 8px;
+
+  font-weight: 700;
+
+  letter-spacing: 2px;
+}
+
+
+.culture-hero-bottom span:last-child {
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+}
+
+
+.culture-hero-bottom i {
+  display: block;
+
+  width: 45px;
+  height: 1px;
+
+  background: var(--champagne);
+}
+
+
+/* =========================================================
+   STATEMENT
+   ========================================================= */
+
+.culture-statement {
+  position: relative;
+
+  overflow: hidden;
+
+  background:
+    linear-gradient(
+      135deg,
+      var(--ivory),
+      var(--ivory-soft)
+    );
+}
+
+
+.culture-statement-orb {
+  position: absolute;
+
+  width: 500px;
+  height: 500px;
+
+  right: -220px;
+  top: -200px;
+
+  border-radius: 50%;
+
+  background:
+    radial-gradient(
+      circle,
+      rgba(112,71,163,.16),
+      transparent 70%
+    );
+}
+
+
+.culture-statement-inner {
+  position: relative;
+}
+
+
+.culture-statement-top {
+  display: flex;
+
+  justify-content: space-between;
+
+  padding-bottom: 25px;
+
+  border-bottom:
+    1px solid var(--border);
+
+  color: var(--muted);
+
+  font-size: 9px;
+
+  font-weight: 800;
+
+  letter-spacing: 2px;
+}
+
+
+.culture-statement h2 {
+  max-width: 900px;
+
+  margin-top: 55px;
+
+  color: var(--midnight);
+
+  font-family:
+    "Playfair Display",
+    serif;
+
+  font-size: clamp(48px, 6vw, 82px);
+
+  font-weight: 400;
+
+  line-height: 1.02;
+
+  letter-spacing: -3px;
+}
+
+
+.culture-statement h2 em {
+  color: var(--orchid);
+}
+
+
+.culture-statement-bottom {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: flex-end;
+
+  gap: 20px;
+
+  margin-top: 45px;
+}
+
+
+.culture-statement-bottom span {
+  width: 80px;
+  height: 1px;
+
+  background:
+    linear-gradient(
+      90deg,
+      var(--orchid),
+      var(--lagoon)
+    );
+}
+
+
+.culture-statement-bottom p {
+  max-width: 430px;
+
+  color: var(--muted);
+
+  font-size: 11px;
+
+  line-height: 1.8;
+}
+
+
+/* =========================================================
+   STORIES HEADING
+   ========================================================= */
+
+.culture-section-heading {
+  display: flex;
+
+  align-items: flex-end;
+
+  justify-content: space-between;
+
+  gap: 40px;
+
+  margin-bottom: 75px;
+}
+
+
+.culture-section-heading h2 {
+  margin-top: 22px;
+
+  color: var(--midnight);
+
+  font-family:
+    "Playfair Display",
+    serif;
+
+  font-size: clamp(45px, 5vw, 70px);
+
+  font-weight: 400;
+
+  line-height: .98;
+
+  letter-spacing: -2px;
+}
+
+
+.culture-section-heading h2 em {
+  color: var(--orchid);
+}
+
+
+.culture-section-heading > p {
+  max-width: 330px;
+
+  padding-bottom: 5px;
+
+  color: var(--muted);
+
+  font-size: 11px;
+
+  line-height: 1.8;
+}
+
+
+/* =========================================================
+   STORY
+   ========================================================= */
+
+.culture-story-list {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 115px;
+}
+
+
+.culture-story {
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 1.15fr)
+    minmax(360px, .85fr);
+
+  align-items: center;
+
+  min-height: 560px;
+}
+
+
+.culture-story.reverse {
+  grid-template-columns:
+    minmax(360px, .85fr)
+    minmax(0, 1.15fr);
+}
+
+
+.culture-story.reverse
+.culture-story-image {
+  order: 2;
+}
+
+
+.culture-story.reverse
+.culture-story-content {
+  order: 1;
+}
+
+
+/* =========================================================
+   IMAGE
+   ========================================================= */
+
+.culture-story-image {
+  position: relative;
+
+  height: 560px;
+
+  overflow: hidden;
+
+  border-radius: 30px;
+
+  background: var(--midnight);
+
+  box-shadow:
+    0 30px 70px rgba(23,19,41,.14);
+}
+
+
+.culture-story-image img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  transition:
+    transform .9s cubic-bezier(.2,.7,.2,1),
+    filter .5s ease;
+}
+
+
+.culture-story:hover
+.culture-story-image img {
+  transform: scale(1.07);
+
+  filter: saturate(1.08);
+}
+
+
+.culture-image-overlay {
+  position: absolute;
+
+  inset: 0;
+
+  background:
+    linear-gradient(
+      180deg,
+      rgba(13,11,20,.04),
+      transparent 45%,
+      rgba(13,11,20,.65)
+    );
+}
+
+
+.culture-story-number {
+  position: absolute;
+
+  top: 24px;
+  left: 24px;
+
+  z-index: 3;
+
+  width: 48px;
+  height: 48px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  color: var(--white);
+
+  background:
+    rgba(23,19,41,.55);
+
+  border:
+    1px solid rgba(255,255,255,.25);
+
+  backdrop-filter: blur(12px);
+
+  font-size: 9px;
+
+  font-weight: 800;
+
+  letter-spacing: 1px;
+}
+
+
+.culture-story-tag {
+  position: absolute;
+
+  top: 27px;
+  right: 24px;
+
+  z-index: 3;
+
+  padding: 9px 13px;
+
+  border-radius: 100px;
+
+  color: var(--white);
+
+  background:
+    rgba(23,19,41,.45);
+
+  border:
+    1px solid rgba(255,255,255,.22);
+
+  backdrop-filter: blur(12px);
+
+  font-size: 7px;
+
+  font-weight: 800;
+
+  letter-spacing: 1.5px;
+}
+
+
+.culture-image-caption {
+  position: absolute;
+
+  left: 25px;
+  right: 25px;
+  bottom: 24px;
+
+  z-index: 3;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  color: rgba(255,255,255,.72);
+
+  font-size: 7px;
+
+  font-weight: 800;
+
+  letter-spacing: 2px;
+}
+
+
+.culture-image-caption i {
+  flex: 1;
+
+  height: 1px;
+
+  margin: 0 15px;
+
+  background: rgba(255,255,255,.3);
+}
+
+
+/* =========================================================
+   CONTENT PANEL
+   ========================================================= */
+
+.culture-story-content {
+  position: relative;
+
+  min-height: 440px;
+
+  margin-left: -65px;
+
+  padding: 55px;
+
+  z-index: 4;
+
+  border-radius: 26px;
+
+  background:
+    linear-gradient(
+      145deg,
+      var(--white),
+      var(--ivory-soft)
+    );
+
+  box-shadow:
+    0 25px 70px rgba(23,19,41,.10);
+}
+
+
+.culture-story.reverse
+.culture-story-content {
+  margin-left: 0;
+
+  margin-right: -65px;
+}
+
+
+.culture-story-icon {
+  width: 48px;
+  height: 48px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 15px;
+
+  color: var(--white);
+
+  background:
+    linear-gradient(
+      135deg,
+      var(--orchid),
+      var(--plum)
+    );
+
+  box-shadow:
+    0 12px 25px rgba(112,71,163,.22);
+}
+
+
+.culture-content-number {
+  position: absolute;
+
+  top: 58px;
+  right: 55px;
+
+  color: var(--sand);
+
+  font-family:
+    "Playfair Display",
+    serif;
+
+  font-size: 48px;
+
+  line-height: 1;
+}
+
+
+.culture-content-tag {
+  display: block;
+
+  margin-top: 42px;
+
+  color: var(--orchid);
+
+  font-size: 8px;
+
+  font-weight: 800;
+
+  letter-spacing: 2px;
+}
+
+
+.culture-story-content h2 {
+  margin-top: 10px;
+
+  color: var(--midnight);
+
+  font-family:
+    "Playfair Display",
+    serif;
+
+  font-size: clamp(45px, 5vw, 68px);
+
+  font-weight: 400;
+
+  line-height: .95;
+
+  letter-spacing: -2px;
+}
+
+
+.culture-story-content h3 {
+  margin-top: 14px;
+
+  color: var(--plum);
+
+  font-family:
+    "Playfair Display",
+    serif;
+
+  font-size: 17px;
+
+  font-style: italic;
+
+  font-weight: 400;
+}
+
+
+.culture-story-content > p {
+  max-width: 480px;
+
+  margin-top: 20px;
+
+  color: var(--muted);
+
+  font-size: 11px;
+
+  line-height: 1.9;
+}
+
+
+.culture-story-link {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  margin-top: 28px;
+
+  color: var(--midnight);
+
+  font-size: 9px;
+
+  font-weight: 800;
+
+  letter-spacing: 1px;
+
+  transition:
+    color .3s ease,
+    gap .3s ease;
+}
+
+
+.culture-story-link span {
+  width: 34px;
+  height: 34px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  color: var(--white);
+
+  background:
+    linear-gradient(
+      135deg,
+      var(--lagoon),
+      var(--orchid)
+    );
+
+  transition:
+    transform .3s ease;
+}
+
+
+.culture-story-link:hover {
+  color: var(--orchid);
+
+  gap: 16px;
+}
+
+
+.culture-story-link:hover span {
+  transform: rotate(8deg);
+}
+
+
+.culture-content-line {
+  position: absolute;
+
+  left: 55px;
+  right: 55px;
+  bottom: 25px;
+
+  height: 1px;
+
+  background:
+    linear-gradient(
+      90deg,
+      var(--champagne),
+      var(--lagoon),
+      transparent
+    );
+}
+
+
+/* =========================================================
+   CTA
+   ========================================================= */
+
+.culture-cta {
+  position: relative;
+
+  min-height: 650px;
+
+  display: flex;
+
+  align-items: center;
+
+  overflow: hidden;
+
+  color: var(--white);
+
+  text-align: center;
+
+  background: var(--midnight);
+}
+
+
+.culture-cta-bg {
+  position: absolute;
+
+  inset: 0;
+
+  background-image:
+    url("https://images.unsplash.com/photo-1528181304800-259b08848526?auto=format&fit=crop&w=2200&q=90");
+
+  background-size: cover;
+
+  background-position: center;
+}
+
+
+.culture-cta-overlay {
+  position: absolute;
+
+  inset: 0;
+
+  background:
+    linear-gradient(
+      180deg,
+      rgba(23,19,41,.86),
+      rgba(23,19,41,.94)
+    );
+}
+
+
+.culture-cta-glow {
+  position: absolute;
+
+  width: 650px;
+  height: 650px;
+
+  left: 50%;
+  top: 50%;
+
+  transform: translate(-50%, -50%);
+
+  border-radius: 50%;
+
+  background:
+    radial-gradient(
+      circle,
+      rgba(112,71,163,.27),
+      rgba(24,166,166,.08) 40%,
+      transparent 70%
+    );
+
+  filter: blur(10px);
+}
+
+
+.culture-cta-inner {
+  position: relative;
+
+  z-index: 3;
+
+  max-width: 850px;
+
+  margin-inline: auto;
+}
+
+
+.culture-cta-label {
+  color: var(--champagne-light);
+
+  font-size: 9px;
+
+  font-weight: 800;
+
+  letter-spacing: 3px;
+}
+
+
+.culture-cta h2 {
+  margin-top: 22px;
+
+  font-family:
+    "Playfair Display",
+    serif;
+
+  font-size: clamp(55px, 7vw, 92px);
+
+  font-weight: 400;
+
+  line-height: .94;
+
+  letter-spacing: -3px;
+}
+
+
+.culture-cta h2 em {
+  color: var(--champagne-light);
+}
+
+
+.culture-cta-text {
+  max-width: 480px;
+
+  margin: 28px auto 0;
+
+  color: rgba(255,255,255,.65);
+
+  font-size: 12px;
+
+  line-height: 1.8;
+}
+
+
+.culture-cta-button {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  margin-top: 32px;
+
+  min-height: 54px;
+
+  padding: 0 25px;
+
+  border-radius: 100px;
+
+  color: var(--white);
+
+  background:
+    linear-gradient(
+      135deg,
+      var(--orchid),
+      var(--plum)
+    );
+
+  box-shadow:
+    0 15px 40px rgba(112,71,163,.28);
+
+  font-size: 10px;
+
+  font-weight: 800;
+
+  letter-spacing: .7px;
+
+  transition:
+    transform .3s ease,
+    box-shadow .3s ease;
+}
+
+
+.culture-cta-button:hover {
+  transform: translateY(-4px);
+
+  box-shadow:
+    0 20px 45px rgba(24,166,166,.25);
+
+  background:
+    linear-gradient(
+      135deg,
+      var(--lagoon),
+      var(--orchid)
+    );
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 1000px) {
+
+  .culture-hero {
+    min-height: 650px;
+  }
+
+
+  .culture-hero-inner {
+    padding-top: 50px;
+  }
+
+
+  .culture-hero-copy h1 {
+    font-size: clamp(58px, 9vw, 85px);
+  }
+
+
+  .culture-story,
+  .culture-story.reverse {
+    grid-template-columns: 1fr 1fr;
+  }
+
+
+  .culture-story-image {
+    height: 470px;
+  }
+
+
+  .culture-story-content {
+    min-height: 400px;
+
+    margin-left: -45px;
+
+    padding: 42px;
+  }
+
+
+  .culture-story.reverse
+  .culture-story-content {
+    margin-right: -45px;
+  }
+
+
+  .culture-content-number {
+    top: 43px;
+    right: 42px;
+
+    font-size: 40px;
+  }
+
+
+  .culture-content-line {
+    left: 42px;
+    right: 42px;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 700px) {
+
+  .culture-hero {
+    min-height: 680px;
+  }
+
+
+  .culture-hero-bg {
+    background-attachment: scroll;
+
+    background-position:
+      62% center;
+  }
+
+
+  .culture-hero-overlay {
+    background:
+      linear-gradient(
+        180deg,
+        rgba(13,11,20,.78),
+        rgba(23,19,41,.93)
+      );
+  }
+
+
+  .culture-hero-inner {
+    display: block;
+
+    padding-top: 80px;
+  }
+
+
+  .culture-hero-copy h1 {
+    font-size: clamp(52px, 15vw, 76px);
+
+    letter-spacing: -2.5px;
+  }
+
+
+  .culture-hero-copy > p {
+    max-width: 390px;
+
+    font-size: 12px;
+  }
+
+
+  .culture-hero-badge {
+    width: 105px;
+    height: 105px;
+
+    margin-top: 40px;
+  }
+
+
+  .culture-hero-badge strong {
+    font-size: 14px;
+  }
+
+
+  .culture-hero-bottom {
+    width: calc(100% - 28px);
+
+    bottom: 20px;
+  }
+
+
+  .culture-hero-bottom span:last-child {
+    display: none;
+  }
+
+
+  /* STATEMENT */
+
+  .culture-statement-top {
+    font-size: 7px;
+  }
+
+
+  .culture-statement h2 {
+    margin-top: 38px;
+
+    font-size: clamp(42px, 12vw, 58px);
+
+    letter-spacing: -2px;
+  }
+
+
+  .culture-statement-bottom {
+    justify-content: flex-start;
+
+    margin-top: 35px;
+  }
+
+
+  .culture-statement-bottom p {
+    font-size: 10px;
+  }
+
+
+  /* HEADING */
+
+  .culture-section-heading {
+    display: block;
+
+    margin-bottom: 50px;
+  }
+
+
+  .culture-section-heading h2 {
+    font-size: 48px;
+  }
+
+
+  .culture-section-heading > p {
+    margin-top: 25px;
+  }
+
+
+  /* STORIES */
+
+  .culture-story-list {
+    gap: 65px;
+  }
+
+
+  .culture-story,
+  .culture-story.reverse {
+    display: flex;
+
+    flex-direction: column;
+  }
+
+
+  .culture-story.reverse
+  .culture-story-image,
+  .culture-story.reverse
+  .culture-story-content {
+    order: initial;
+  }
+
+
+  .culture-story-image {
+    width: 100%;
+
+    height: 390px;
+
+    border-radius: 22px;
+  }
+
+
+  .culture-story-content,
+  .culture-story.reverse
+  .culture-story-content {
+    width: calc(100% - 24px);
+
+    min-height: auto;
+
+    margin:
+      -35px 0 0 auto;
+
+    padding: 32px 27px 45px;
+
+    border-radius: 20px;
+  }
+
+
+  .culture-story.reverse
+  .culture-story-content {
+    margin-left: 0;
+  }
+
+
+  .culture-story-icon {
+    width: 42px;
+    height: 42px;
+  }
+
+
+  .culture-content-number {
+    top: 32px;
+    right: 27px;
+
+    font-size: 34px;
+  }
+
+
+  .culture-content-tag {
+    margin-top: 28px;
+
+    font-size: 7px;
+  }
+
+
+  .culture-story-content h2 {
+    font-size: 47px;
+
+    letter-spacing: -1.5px;
+  }
+
+
+  .culture-story-content h3 {
+    font-size: 15px;
+  }
+
+
+  .culture-story-content > p {
+    font-size: 10px;
+
+    line-height: 1.8;
+  }
+
+
+  .culture-content-line {
+    left: 27px;
+    right: 27px;
+    bottom: 20px;
+  }
+
+
+  /* CTA */
+
+  .culture-cta {
+    min-height: 600px;
+  }
+
+
+  .culture-cta h2 {
+    font-size: clamp(50px, 14vw, 70px);
+
+    letter-spacing: -2px;
+  }
+
+
+  .culture-cta-text {
+    max-width: 350px;
+
+    font-size: 10px;
+  }
+
+
+  .culture-cta-button {
+    min-height: 50px;
+
+    padding: 0 19px;
+
+    font-size: 9px;
+  }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+   ========================================================= */
+
+@media (max-width: 420px) {
+
+  .culture-hero {
+    min-height: 630px;
+  }
+
+
+  .culture-hero-copy h1 {
+    font-size: 50px;
+  }
+
+
+  .culture-hero-copy > p {
+    font-size: 11px;
+  }
+
+
+  .culture-hero-badge {
+    width: 92px;
+    height: 92px;
+
+    margin-top: 30px;
+  }
+
+
+  .culture-statement h2 {
+    font-size: 40px;
+  }
+
+
+  .culture-story-image {
+    height: 330px;
+  }
+
+
+  .culture-story-content,
+  .culture-story.reverse
+  .culture-story-content {
+    width: calc(100% - 15px);
+
+    padding:
+      27px 22px 40px;
+  }
+
+
+  .culture-story-content h2 {
+    font-size: 42px;
+  }
+
+
+  .culture-content-number {
+    right: 22px;
+  }
+
+
+  .culture-image-caption {
+    left: 17px;
+    right: 17px;
+  }
+
+
+  .culture-story-number {
+    top: 17px;
+    left: 17px;
+
+    width: 40px;
+    height: 40px;
+  }
+
+
+  .culture-story-tag {
+    top: 19px;
+    right: 17px;
+
+    padding: 7px 9px;
+  }
+
+}
+
+
+/* =====================================================
+   CULTURE STATEMENT — PREMIUM EDITORIAL
+===================================================== */
+
+.culture-statement {
+  position: relative;
+  min-height: 680px;
+
+  display: flex;
+  align-items: center;
+
+  overflow: hidden;
+
+  color: var(--white);
+
+  background:
+    linear-gradient(
+      135deg,
+      var(--midnight),
+      var(--plum) 55%,
+      #241936
+    );
+}
+
+
+/* ===============================
+   BACKGROUND IMAGE
+================================ */
+
+.culture-statement-bg {
+  position: absolute;
+  inset: 0;
+
+  background-image:
+    url("https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=2000&q=90");
+
+  background-size: cover;
+  background-position: center;
+
+  opacity: 0.38;
+
+  transform: scale(1.03);
+
+  transition: transform 1.2s ease;
+}
+
+.culture-statement:hover .culture-statement-bg {
+  transform: scale(1.08);
+}
+
+
+/* ===============================
+   GRADIENT OVERLAY
+================================ */
+
+.culture-statement-overlay {
+  position: absolute;
+  inset: 0;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(23, 19, 41, 0.98) 0%,
+      rgba(48, 32, 82, 0.88) 48%,
+      rgba(23, 19, 41, 0.45) 100%
+    );
+
+  z-index: 1;
+}
+
+
+/* ===============================
+   GLOW ORBS
+================================ */
+
+.culture-statement-orb {
+  position: absolute;
+
+  border-radius: 50%;
+
+  pointer-events: none;
+
+  filter: blur(10px);
+
+  z-index: 2;
+}
+
+.culture-orb-one {
+  width: 360px;
+  height: 360px;
+
+  top: -180px;
+  right: 8%;
+
+  background:
+    radial-gradient(
+      circle,
+      rgba(112, 71, 163, 0.35),
+      transparent 70%
+    );
+}
+
+.culture-orb-two {
+  width: 300px;
+  height: 300px;
+
+  bottom: -150px;
+  left: 4%;
+
+  background:
+    radial-gradient(
+      circle,
+      rgba(24, 166, 166, 0.22),
+      transparent 70%
+    );
+}
+
+
+/* ===============================
+   INNER
+================================ */
+
+.culture-statement-inner {
+  position: relative;
+
+  width: 100%;
+
+  z-index: 3;
+}
+
+
+/* ===============================
+   TOP ROW
+================================ */
+
+.culture-statement-top {
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+
+  margin-bottom: 70px;
+
+  padding-bottom: 18px;
+
+  border-bottom:
+    1px solid rgba(255, 255, 255, 0.16);
+}
+
+.culture-statement-tag,
+.culture-statement-count {
+  display: flex;
+  align-items: center;
+
+  gap: 10px;
+
+  font-size: 11px;
+  font-weight: 700;
+
+  letter-spacing: 2.5px;
+}
+
+.culture-statement-tag {
+  color: var(--champagne-light);
+}
+
+.culture-statement-tag i {
+  width: 30px;
+  height: 1px;
+
+  display: block;
+
+  background:
+    linear-gradient(
+      90deg,
+      var(--champagne),
+      var(--peach)
+    );
+}
+
+.culture-statement-count {
+  color: rgba(255, 255, 255, 0.55);
+}
+
+
+/* ===============================
+   MAIN CONTENT
+================================ */
+
+.culture-statement-main {
+  display: grid;
+
+  grid-template-columns: 90px 1fr;
+
+  gap: 35px;
+}
+
+
+/* NUMBER */
+
+.culture-statement-number {
+  width: 62px;
+  height: 62px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  color: var(--champagne-light);
+
+  font-family: "Playfair Display", serif;
+
+  font-size: 18px;
+
+  border:
+    1px solid rgba(216, 179, 106, 0.45);
+
+  background:
+    rgba(216, 179, 106, 0.08);
+
+  box-shadow:
+    inset 0 0 25px rgba(216, 179, 106, 0.05);
+}
+
+
+/* ===============================
+   HEADING
+================================ */
+
+.culture-statement-copy h2 {
+  max-width: 850px;
+
+  margin: 0;
+
+  font-family: "Playfair Display", serif;
+
+  font-size: clamp(52px, 6vw, 92px);
+
+  font-weight: 400;
+
+  line-height: 0.98;
+
+  letter-spacing: -3px;
+
+  color: var(--white);
+}
+
+.culture-statement-copy h2 em {
+  color: var(--champagne-light);
+
+  font-style: italic;
+}
+
+.culture-statement-copy h2 span {
+  background:
+    linear-gradient(
+      90deg,
+      var(--lagoon-light),
+      var(--champagne-light),
+      var(--peach)
+    );
+
+  -webkit-background-clip: text;
+  background-clip: text;
+
+  color: transparent;
+}
+
+
+/* ===============================
+   BOTTOM DESCRIPTION
+================================ */
+
+.culture-statement-bottom {
+  display: flex;
+
+  align-items: flex-start;
+
+  gap: 25px;
+
+  max-width: 650px;
+
+  margin-top: 55px;
+}
+
+.statement-line {
+  width: 55px;
+  height: 1px;
+
+  flex-shrink: 0;
+
+  margin-top: 10px;
+
+  background:
+    linear-gradient(
+      90deg,
+      var(--lagoon),
+      var(--champagne)
+    );
+}
+
+.culture-statement-bottom p {
+  margin: 0;
+
+  color: rgba(255, 255, 255, 0.68);
+
+  font-size: 15px;
+
+  line-height: 1.8;
+
+  letter-spacing: 0.2px;
+}
+
+
+/* ===============================
+   FLOATING NOTE
+================================ */
+
+.culture-floating-note {
+  position: absolute;
+
+  right: 3%;
+  bottom: 55px;
+
+  width: 145px;
+  height: 145px;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+
+  border-radius: 50%;
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(112, 71, 163, 0.92),
+      rgba(24, 166, 166, 0.82)
+    );
+
+  border:
+    1px solid rgba(255, 255, 255, 0.25);
+
+  box-shadow:
+    0 25px 60px rgba(0, 0, 0, 0.3);
+
+  transform: rotate(-8deg);
+
+  animation:
+    cultureFloat 5s ease-in-out infinite;
+}
+
+.culture-floating-note span {
+  font-size: 8px;
+
+  letter-spacing: 2px;
+
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.culture-floating-note strong {
+  margin: 5px 0;
+
+  font-family: "Playfair Display", serif;
+
+  font-size: 20px;
+
+  font-weight: 500;
+}
+
+.culture-floating-note small {
+  font-size: 8px;
+
+  letter-spacing: 1.5px;
+
+  color: var(--champagne-light);
+}
+
+
+/* ===============================
+   FLOAT ANIMATION
+================================ */
+
+@keyframes cultureFloat {
+
+  0%,
+  100% {
+    transform: rotate(-8deg) translateY(0);
+  }
+
+  50% {
+    transform: rotate(-5deg) translateY(-10px);
+  }
+
+}
+
+
+/* ===============================
+   TABLET
+================================ */
+
+@media (max-width: 1000px) {
+
+  .culture-statement {
+    min-height: 620px;
+  }
+
+  .culture-statement-top {
+    margin-bottom: 55px;
+  }
+
+  .culture-statement-main {
+    grid-template-columns: 65px 1fr;
+    gap: 20px;
+  }
+
+  .culture-statement-copy h2 {
+    font-size: clamp(46px, 7vw, 72px);
+  }
+
+  .culture-floating-note {
+    width: 120px;
+    height: 120px;
+
+    right: 25px;
+    bottom: 30px;
+  }
+
+}
+
+
+/* ===============================
+   MOBILE
+================================ */
+
+@media (max-width: 700px) {
+
+  .culture-statement {
+    min-height: auto;
+
+    padding:
+      80px 0
+      90px;
+  }
+
+  .culture-statement-overlay {
+    background:
+      linear-gradient(
+        180deg,
+        rgba(23, 19, 41, 0.96),
+        rgba(48, 32, 82, 0.9)
+      );
+  }
+
+  .culture-statement-top {
+    margin-bottom: 45px;
+
+    padding-bottom: 15px;
+  }
+
+  .culture-statement-tag,
+  .culture-statement-count {
+    font-size: 9px;
+
+    letter-spacing: 1.7px;
+  }
+
+  .culture-statement-count {
+    display: none;
+  }
+
+  .culture-statement-main {
+    display: block;
+  }
+
+  .culture-statement-number {
+    width: 48px;
+    height: 48px;
+
+    margin-bottom: 28px;
+
+    font-size: 15px;
+  }
+
+  .culture-statement-copy h2 {
+    font-size: clamp(42px, 12vw, 58px);
+
+    line-height: 1;
+
+    letter-spacing: -1.8px;
+  }
+
+  .culture-statement-bottom {
+    gap: 15px;
+
+    margin-top: 38px;
+
+    max-width: 100%;
+  }
+
+  .statement-line {
+    width: 28px;
+
+    margin-top: 9px;
+  }
+
+  .culture-statement-bottom p {
+    font-size: 13px;
+
+    line-height: 1.7;
+  }
+
+  .culture-floating-note {
+    position: relative;
+
+    right: auto;
+    bottom: auto;
+
+    width: 105px;
+    height: 105px;
+
+    margin:
+      55px
+      0
+      0
+      auto;
+  }
+
+  .culture-floating-note strong {
+    font-size: 16px;
+  }
+
+}
+
+
+/* ===============================
+   SMALL MOBILE
+================================ */
+
+@media (max-width: 420px) {
+
+  .culture-statement {
+    padding: 65px 0 75px;
+  }
+
+  .culture-statement-tag {
+    font-size: 8px;
+  }
+
+  .culture-statement-copy h2 {
+    font-size: 39px;
+  }
+
+  .culture-statement-bottom p {
+    font-size: 12px;
+  }
+
+  .culture-floating-note {
+    width: 92px;
+    height: 92px;
+  }
+
+  .culture-floating-note strong {
+    font-size: 14px;
+  }
+
+}
+
+
+/* =========================================================
+   CULTURE HERO — THAIVANA
+   PREMIUM / EDITORIAL / RESPONSIVE
+========================================================= */
+
+.culture-hero {
+  position: relative;
+  min-height: 780px;
+
+  display: flex;
+  align-items: center;
+
+  overflow: hidden;
+
+  color: var(--white);
+
+  background: var(--midnight);
+}
+
+
+/* =========================================================
+   BACKGROUND IMAGE
+========================================================= */
+
+.culture-hero-bg {
+  position: absolute;
+  inset: 0;
+
+  background-image:
+    url("https://images.unsplash.com/photo-1518709594023-6eab9bab7b23?auto=format&fit=crop&w=2200&q=90");
+
+  background-size: cover;
+  background-position: center;
+
+  transform: scale(1.04);
+
+  animation: cultureHeroZoom 14s ease-in-out infinite alternate;
+}
+
+@keyframes cultureHeroZoom {
+  from {
+    transform: scale(1.04);
+  }
+
+  to {
+    transform: scale(1.1);
+  }
+}
+
+
+/* =========================================================
+   DARK + COLORFUL GRADIENT
+========================================================= */
+
+.culture-hero-overlay {
+  position: absolute;
+  inset: 0;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(23, 19, 41, 0.97) 0%,
+      rgba(48, 32, 82, 0.88) 38%,
+      rgba(48, 32, 82, 0.48) 68%,
+      rgba(23, 19, 41, 0.32) 100%
+    );
+
+  z-index: 1;
+}
+
+
+/* Bottom fade */
+
+.culture-hero-overlay::after {
+  content: "";
+
+  position: absolute;
+  inset: auto 0 0;
+
+  height: 230px;
+
+  background:
+    linear-gradient(
+      to top,
+      var(--midnight),
+      transparent
+    );
+}
+
+
+/* =========================================================
+   GLOW
+========================================================= */
+
+.culture-hero-glow {
+  position: absolute;
+
+  width: 600px;
+  height: 600px;
+
+  top: -250px;
+  right: -120px;
+
+  border-radius: 50%;
+
+  background:
+    radial-gradient(
+      circle,
+      rgba(112, 71, 163, 0.42),
+      rgba(24, 166, 166, 0.12) 45%,
+      transparent 72%
+    );
+
+  filter: blur(15px);
+
+  z-index: 2;
+
+  animation: cultureGlow 7s ease-in-out infinite alternate;
+}
+
+@keyframes cultureGlow {
+
+  from {
+    transform: translate(0, 0) scale(1);
+  }
+
+  to {
+    transform: translate(-40px, 35px) scale(1.1);
+  }
+
+}
+
+
+/* =========================================================
+   INNER
+========================================================= */
+
+.culture-hero-inner {
+  position: relative;
+
+  width: 100%;
+
+  display: grid;
+
+  grid-template-columns: minmax(0, 1fr) 260px;
+
+  align-items: center;
+
+  gap: 80px;
+
+  padding-top: 80px;
+
+  z-index: 3;
+}
+
+
+/* =========================================================
+   HERO COPY
+========================================================= */
+
+.culture-hero-copy {
+  max-width: 850px;
+}
+
+
+/* =========================================================
+   LABEL
+========================================================= */
+
+.culture-hero-label {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 13px;
+
+  margin-bottom: 30px;
+
+  color: var(--champagne-light);
+
+  font-size: 11px;
+
+  font-weight: 700;
+
+  letter-spacing: 3px;
+
+  text-transform: uppercase;
+}
+
+.culture-hero-label span {
+  width: 38px;
+  height: 1px;
+
+  background:
+    linear-gradient(
+      90deg,
+      var(--champagne),
+      var(--peach)
+    );
+}
+
+.culture-hero-label span:last-child {
+  width: 18px;
+
+  opacity: 0.5;
+}
+
+
+/* =========================================================
+   TITLE
+========================================================= */
+
+.culture-hero-copy h1 {
+  margin: 0;
+
+  font-family:
+    "Playfair Display",
+    serif;
+
+  font-size:
+    clamp(58px, 8vw, 112px);
+
+  font-weight: 400;
+
+  line-height: 0.9;
+
+  letter-spacing: -4px;
+
+  text-shadow:
+    0 15px 45px rgba(0, 0, 0, 0.25);
+}
+
+.culture-hero-copy h1 em {
+  font-style: italic;
+
+  background:
+    linear-gradient(
+      90deg,
+      var(--champagne-light),
+      var(--peach),
+      var(--lagoon-light)
+    );
+
+  -webkit-background-clip: text;
+  background-clip: text;
+
+  color: transparent;
+}
+
+
+/* =========================================================
+   DESCRIPTION
+========================================================= */
+
+.culture-hero-copy p {
+  max-width: 560px;
+
+  margin-top: 35px;
+
+  color:
+    rgba(255, 255, 255, 0.72);
+
+  font-size: 15px;
+
+  line-height: 1.85;
+
+  letter-spacing: 0.2px;
+}
+
+
+/* =========================================================
+   CULTURE BADGE
+========================================================= */
+
+.culture-hero-badge {
+  position: relative;
+
+  width: 205px;
+  height: 205px;
+
+  margin-left: auto;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+
+  border-radius: 50%;
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(112, 71, 163, 0.88),
+      rgba(24, 166, 166, 0.62)
+    );
+
+  border:
+    1px solid
+    rgba(255, 255, 255, 0.25);
+
+  box-shadow:
+    0 30px 80px
+    rgba(0, 0, 0, 0.35),
+
+    inset 0 0 35px
+    rgba(255, 255, 255, 0.08);
+
+  backdrop-filter: blur(12px);
+
+  transform: rotate(7deg);
+
+  animation:
+    cultureBadgeFloat
+    5s ease-in-out infinite;
+}
+
+
+/* Outer ring */
+
+.culture-hero-badge::before {
+  content: "";
+
+  position: absolute;
+
+  inset: -12px;
+
+  border-radius: 50%;
+
+  border:
+    1px dashed
+    rgba(216, 179, 106, 0.5);
+
+  animation:
+    cultureBadgeRotate
+    18s linear infinite;
+}
+
+@keyframes cultureBadgeRotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+@keyframes cultureBadgeFloat {
+
+  0%,
+  100% {
+    transform:
+      rotate(7deg)
+      translateY(0);
+  }
+
+  50% {
+    transform:
+      rotate(3deg)
+      translateY(-12px);
+  }
+
+}
+
+
+/* Badge text */
+
+.culture-hero-badge span {
+  font-size: 9px;
+
+  font-weight: 700;
+
+  letter-spacing: 3px;
+
+  color:
+    rgba(255, 255, 255, 0.65);
+}
+
+.culture-hero-badge strong {
+  margin: 7px 0 12px;
+
+  font-family:
+    "Playfair Display",
+    serif;
+
+  font-size: 25px;
+
+  font-weight: 500;
+
+  letter-spacing: 0.5px;
+}
+
+.culture-hero-badge small {
+  color:
+    var(--champagne-light);
+
+  font-size: 8px;
+
+  line-height: 1.8;
+
+  letter-spacing: 2px;
+}
+
+
+/* =========================================================
+   BOTTOM BAR
+========================================================= */
+
+.culture-hero-bottom {
+  position: absolute;
+
+  left: 0;
+  right: 0;
+  bottom: 30px;
+
+  width:
+    min(100% - 40px, var(--container));
+
+  margin-inline: auto;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  z-index: 4;
+
+  color:
+    rgba(255, 255, 255, 0.55);
+
+  font-size: 9px;
+
+  font-weight: 700;
+
+  letter-spacing: 2.5px;
+}
+
+.culture-hero-bottom span:last-child {
+  display: flex;
+
+  align-items: center;
+
+  gap: 15px;
+
+  color:
+    rgba(255, 255, 255, 0.7);
+}
+
+.culture-hero-bottom i {
+  display: block;
+
+  width: 45px;
+  height: 1px;
+
+  background:
+    linear-gradient(
+      90deg,
+      var(--champagne),
+      var(--lagoon)
+    );
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1000px) {
+
+  .culture-hero {
+    min-height: 700px;
+  }
+
+  .culture-hero-inner {
+    grid-template-columns: 1fr 180px;
+
+    gap: 40px;
+  }
+
+  .culture-hero-badge {
+    width: 165px;
+    height: 165px;
+  }
+
+  .culture-hero-copy h1 {
+    font-size:
+      clamp(55px, 9vw, 82px);
+
+    letter-spacing: -3px;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 700px) {
+
+  .culture-hero {
+    min-height: 720px;
+
+    align-items: flex-start;
+  }
+
+
+  /* Better mobile image position */
+
+  .culture-hero-bg {
+    background-position:
+      62% center;
+  }
+
+
+  .culture-hero-overlay {
+    background:
+      linear-gradient(
+        180deg,
+        rgba(23, 19, 41, 0.9) 0%,
+        rgba(48, 32, 82, 0.76) 48%,
+        rgba(23, 19, 41, 0.94) 100%
+      );
+  }
+
+
+  .culture-hero-inner {
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 35px;
+
+    padding-top: 120px;
+  }
+
+
+  .culture-hero-copy {
+    width: 100%;
+  }
+
+
+  .culture-hero-label {
+    margin-bottom: 24px;
+
+    font-size: 9px;
+
+    letter-spacing: 2px;
+
+    gap: 9px;
+  }
+
+  .culture-hero-label span {
+    width: 24px;
+  }
+
+
+  .culture-hero-copy h1 {
+    font-size:
+      clamp(48px, 14vw, 68px);
+
+    line-height: 0.94;
+
+    letter-spacing: -2px;
+  }
+
+
+  .culture-hero-copy p {
+    max-width: 440px;
+
+    margin-top: 25px;
+
+    font-size: 13px;
+
+    line-height: 1.7;
+  }
+
+
+  /* Badge moves to bottom-right */
+
+  .culture-hero-badge {
+    width: 125px;
+    height: 125px;
+
+    align-self: flex-end;
+
+    margin:
+      0
+      18px
+      30px
+      0;
+  }
+
+  .culture-hero-badge::before {
+    inset: -8px;
+  }
+
+  .culture-hero-badge strong {
+    font-size: 17px;
+
+    margin:
+      4px 0 7px;
+  }
+
+  .culture-hero-badge span {
+    font-size: 7px;
+
+    letter-spacing: 2px;
+  }
+
+  .culture-hero-badge small {
+    font-size: 6px;
+
+    line-height: 1.7;
+
+    letter-spacing: 1.5px;
+  }
+
+
+  /* Bottom bar */
+
+  .culture-hero-bottom {
+    width:
+      calc(100% - 28px);
+
+    bottom: 18px;
+
+    font-size: 7px;
+
+    letter-spacing: 1.5px;
+  }
+
+  .culture-hero-bottom span:last-child {
+    gap: 8px;
+  }
+
+  .culture-hero-bottom i {
+    width: 25px;
+  }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 420px) {
+
+  .culture-hero {
+    min-height: 690px;
+  }
+
+  .culture-hero-inner {
+    padding-top: 105px;
+  }
+
+  .culture-hero-copy h1 {
+    font-size: 45px;
+
+    letter-spacing: -1.5px;
+  }
+
+  .culture-hero-copy p {
+    font-size: 12px;
+  }
+
+  .culture-hero-badge {
+    width: 110px;
+    height: 110px;
+
+    margin-right: 10px;
+  }
+
+  .culture-hero-badge strong {
+    font-size: 15px;
+  }
+
+  .culture-hero-bottom span:last-child {
+    display: none;
+  }
+
+}
+
